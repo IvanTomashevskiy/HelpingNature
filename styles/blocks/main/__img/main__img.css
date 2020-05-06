@@ -1,0 +1,6 @@
+.main__img{
+    height: 916px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}

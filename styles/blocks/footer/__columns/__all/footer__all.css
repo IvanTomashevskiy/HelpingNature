@@ -1,0 +1,13 @@
+@import url('./__column-heading/footer__column-heading.css');
+@import url('./__menu-link/footer__menu-link.css');
+@import url('./_info/footer__column_info.css');
+@import url('./_social/footer__column_social.css');
+@import url('./social/social.css');
+
+.footer__all{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: auto;
+
+}

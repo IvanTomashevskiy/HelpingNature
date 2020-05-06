@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="NewsAnalyzer">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Helping Nature</title>
+    <link rel="stylesheet" href="./styles/pages/map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+
+</head>
+<body>
+    <div class="root">
+        <header class="header root__section">
+            <h1 class="logo">Helping Nature</h1>
+        </header>
+        <hr>
+        <div class="profile root__section">
+            <div class="user-info">
+              <div class="user-info__photo"></div>
+                <div class="user-info__data">
+                    <h1 class="user-info__name">Имя</h1>
+                    <p class="user-info__job">Увлечения</p>
+                </div>
+            </div>
+        </div>
+        <div class="mapid" id="mapid"></div>
+
+    </div>
+    <script src="../src/js/map.js"></script>
+</body>
+</html>

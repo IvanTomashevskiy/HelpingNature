@@ -1,0 +1,22 @@
+@import url('./_auth/main__button_auth.css');
+@import url('./_reg/main__button_reg.css');
+.main__button{
+    position: absolute;
+    color:white;
+    margin-top: 60px;
+    box-sizing: border-box;
+    border:3px solid white;
+    width: 200px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-out;
+    z-index: 2;
+    font-size: 25px;
+    padding: 6px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}

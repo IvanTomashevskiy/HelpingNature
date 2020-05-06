@@ -1,0 +1,7 @@
+.digits__title{
+    display: flex;
+    justify-content: center; 
+    line-height: 69px;
+    font-size: 60px;
+    
+}

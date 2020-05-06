@@ -1,0 +1,5 @@
+@import url('./__link/social__link.css');
+
+.social{
+    display: flex;
+}

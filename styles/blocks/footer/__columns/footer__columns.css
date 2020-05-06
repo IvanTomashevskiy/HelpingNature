@@ -1,0 +1,9 @@
+@import url('./__all/footer__all.css');
+@import url('./_copyright/footer__column_copyright.css');
+
+.footer__columns{
+    display: flex;
+    align-items: center;
+    width:90%;
+    justify-content: space-between;
+}
