@@ -1,0 +1,47 @@
+[
+ {
+  "id": 3,
+  "full_name": "Иван",
+  "email": "tomashevskiy_vanya@mail.ru",
+  "password": "$2b$10$M9rLTLs2uJQAMVoQYQvX..jRvy3RgmkXxV6AboUBU4xSONGeU4IxW",
+  "country": "Arg",
+  "avatar": "иван-1588774346040.jpg",
+  "token": "H6F62Lwzy3HVf6ee2WPyCj"
+ },
+ {
+  "id": 4,
+  "full_name": "Иван",
+  "email": "tomashevskiy_vanya@mail.ru",
+  "password": "$2b$10$RCvOVgvvtXqdZiHbbBTf0eNS7iVVY20unrHUpcHJeVTwooUzcpnRi",
+  "country": "Arg",
+  "avatar": "иван-1588858764028.jpg",
+  "token": "McBqQ2SfCrrTXCahgz1Ffw"
+ },
+ {
+  "id": 5,
+  "full_name": "Иван",
+  "email": "towwww@mail.ru",
+  "password": "$2b$10$vprgZrjcVuwOhb8fklcVX.VV1Qm8c6l6dlGNX/STi8lL5kiqsj8qy",
+  "country": "Arg",
+  "avatar": "иван-1588858949079.jpg",
+  "token": "UhqV1xu55JkcJ3qMQryYie"
+ },
+ {
+  "id": 6,
+  "full_name": "Иван",
+  "email": "stepa.gl@yandex.ru",
+  "password": "$2b$10$uaS0jebYLRmYrpWQJQFgcuhfltXGQZC1d/gL5KzIysM03qz/qvRYe",
+  "country": "Bol",
+  "avatar": "иван-1589200345351.jpg",
+  "token": "HiFDn5VXBz2BjWFKzjsB87"
+ },
+ {
+  "id": 7,
+  "full_name": "Иван",
+  "email": "q@mail.ru",
+  "password": "$2b$10$xEpj8A0W17PCe0p75K.TXuem6MGQA/3L1uz4KJ8JAf/iPDgJPQ23O",
+  "country": "Bol",
+  "avatar": "иван-1589458259554.jpg",
+  "token": "86U9DBUigS7mJp5DytSjYu"
+ }
+]

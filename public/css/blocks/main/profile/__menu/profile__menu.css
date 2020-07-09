@@ -1,0 +1,26 @@
+.profile__menu{
+    position: absolute;
+    top: 100%;
+    left: 54px;
+    width: 121px;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+   height:60px
+  }
+
+  ul li:hover .profile__menu {
+    -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+      transform: scaleY(1);
+  }

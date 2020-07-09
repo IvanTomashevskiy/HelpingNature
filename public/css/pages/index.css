@@ -1,0 +1,27 @@
+@import url('../blocks/main/main.css');
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/digits/digits.css');
+@import url('../blocks/accordion/accordion.css');
+@import url('/vendor/montserrat.css');
+@import url('/vendor/normalize.css');
+@import url('../blocks/forms/forms.css');
+@import url('../blocks/errors/errors.css');
+
+.link{
+    opacity:1;
+}
+a:hover{
+   opacity: 0.6; 
+   transition: opacity 1s linear 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'montserrat';
+    overflow-x: hidden;
+    
+}

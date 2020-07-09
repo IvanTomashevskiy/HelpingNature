@@ -1,0 +1,26 @@
+@import url("./__title/forms__title.css");
+
+@import url('./__field/forms__field.css');
+@import url('./__btn/forms__btn.css');
+@import url('./__inpfile/reg__inpfile.css');
+@import url('./__loadimg/reg__loadimg.css');
+@import url('./__country/reg__country.css');
+@import url('./_login/forms_login.css');
+@import url('./_reg/forms_reg.css');
+@import url('./__checkbox/forms__checkbox.css');
+@import url('./__checkboxlbl/forms__checkboxlbl.css');
+@import url('./__invisible/forms__invisible.css');
+@import url('./__noakk/forms__noakk.css');
+
+.forms{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    border-radius: 5px;
+    background: rgba(3,3,3,0.25);
+    box-shadow: 1px 1px 50px #000;
+    color: white;
+}

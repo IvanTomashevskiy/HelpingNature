@@ -1,0 +1,31 @@
+.reg__inpfile{
+    width: 270px;
+    margin: 0 32px;
+    height: 23px;
+        
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: 1;
+    }
+.reg__inpfile + label {
+        font-size: 19px;
+        font-weight: 100;
+        color: white;
+        background-color:rgba(107,255,3,0.3);
+        padding: 8px;
+        display: inline-block;
+        width: 270px;
+        margin: 0 32px;
+        height: 23px;
+        text-align: center;
+        border-radius: 10px;
+
+    }
+.reg__inpfile:focus + label,
+.reg__inpfile + label:hover {
+    opacity: 0.7;
+}
+.reg__inpfile + label {
+	cursor: pointer; /* "hand" cursor */
+}

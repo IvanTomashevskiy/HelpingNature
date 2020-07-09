@@ -1,0 +1,24 @@
+.forms__btn{
+    text-align: center;
+    padding: 4px 8px;
+    background: rgba(107,255,3,0.3);
+    text-decoration: none;
+    position: relative;
+    width: 85%;
+    height: 40px;
+    display: block;
+    margin: 9px auto;
+    font-size: 17px;
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+   
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.forms__btn:hover{
+    opacity: 0.7;
+}

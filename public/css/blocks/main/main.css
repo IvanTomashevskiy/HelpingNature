@@ -1,0 +1,10 @@
+@import url('./__button/main__button.css');
+@import url('./__img/main__img.css');
+@import url('./__title/main__title.css');
+@import url('./profile/profile.css');
+@import url('./__audio/main_audio.css');
+@import url('./__sound/main__sound.css');
+.main{
+    margin:0;
+    height: 690px;
+}

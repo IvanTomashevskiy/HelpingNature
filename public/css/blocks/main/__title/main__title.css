@@ -1,0 +1,12 @@
+.main__title{
+    font-family: 'Montserrat';
+    font-size: 50px;
+    line-height: 78px;
+    text-align: center;
+    position: absolute;
+    margin:20px 0 0 20px;
+    z-index: 3;
+    color:white;
+    text-decoration: none;
+
+}

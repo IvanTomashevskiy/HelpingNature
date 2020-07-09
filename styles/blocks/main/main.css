@@ -1,8 +1,0 @@
-@import url('./__button/main__button.css');
-@import url('./__img/main__img.css');
-@import url('./__title/main__title.css');
-
-.main{
-    margin:0;
-    height: 916px;
-}

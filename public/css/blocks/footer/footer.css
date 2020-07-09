@@ -1,0 +1,9 @@
+@import url('./__columns/footer__columns.css');
+.footer{
+    display: flex;
+    justify-content: center;
+    min-height: 252px;
+    color: white;
+    background-color: rgba(29, 71, 1, 0.3);
+    overflow: hidden;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="NewsAnalyzer">
+		<link rel="shortcut icon" href="" type="image/x-icon">
+		<link rel="stylesheet" href="/css/pages/index.css">
+		<title>Helping Nature</title>
+	</head>
+	
+	<body>
+	<%- include('partials/navbar'); %>
+	
+	<div class="forms forms_reg">
+				<h2 class="forms__title">Registration Form</h2>
+				<% if (typeof errors != 'undefined') { %>
+					<ul>
+						<% for (const oneError of errors) { %>
+							<li class="text-danger"><%= oneError.msg %></li>
+						<% } %>
+					</ul>
+				<% } %>
+	
+				<form method="POST" action="/users/register" enctype="multipart/form-data">
+								
+								<input 
+									type="text" 
+									name="full_name" 
+									placeholder="Full name"
+									class="forms__field
+									<% if (typeof hasErrorGetMessage != 'undefined') { %>
+										<%= hasErrorGetMessage('full_name', errors) ? 'is-invalid' : 'is-valid' %>
+									<% } %>"
+									value="<%= typeof oldData != 'undefined' ? oldData.full_name : null %>">
+								<% if (typeof hasErrorGetMessage != 'undefined') { %>
+									<div class="invalid-feedback">
+										<%= hasErrorGetMessage('full_name', errors) %>
+									</div>
+								<% } %>
+							
+								<input 
+									type="text" 
+									name="email" 
+									placeholder="Email"
+
+									class="forms__field
+									<% if (typeof hasErrorGetMessage != 'undefined') { %>
+										<%= hasErrorGetMessage('email', errors) ? 'is-invalid' : 'is-valid' %>
+									<% } %>"
+									value="<%= typeof oldData != 'undefined' ? oldData.email : null %>"
+								>
+								<% if (typeof hasErrorGetMessage != 'undefined') { %>
+									<div class="invalid-feedback">
+										<%= hasErrorGetMessage('email', errors) %>
+									</div>
+								<% } %>
+							
+							
+								<input type="password" 
+										name="password" 
+										placeholder="Password"
+
+									class="forms__field
+									<% if (typeof hasErrorGetMessage != 'undefined') { %>
+										<%= hasErrorGetMessage('password', errors) ? 'is-invalid' : null %>
+									<% } %>"
+								>
+								<% if (typeof hasErrorGetMessage != 'undefined') { %>
+									<div class="invalid-feedback">
+										<%= hasErrorGetMessage('password', errors) %>
+									</div>
+								<% } %>
+							
+								<input type="password" name="re_password" 
+											placeholder="Repeat Password"
+											class="forms__field
+											<% if (typeof hasErrorGetMessage != 'undefined') { %>
+												<%= hasErrorGetMessage('re_password', errors) ? 'is-invalid' : null %>
+											<% } %>"
+								>
+								<% if (typeof hasErrorGetMessage != 'undefined') { %>
+									<div class="invalid-feedback">
+										<%= hasErrorGetMessage('re_password', errors) %>
+									</div>
+								<% } %>
+							
+						
+							
+								<select name="country" 
+
+									class="reg__country
+									<% if (typeof hasErrorGetMessage != 'undefined') { %>
+										<%= hasErrorGetMessage('country', errors) ? 'is-invalid' : 'is-valid' %>
+									<% } %>"
+								>
+									<option value="">Country of birth</option>
+									<%  
+										let countries = [
+											{code: 'Arg', name: 'Argentina'},
+											{code: 'Bol', name: 'Bolivia'},
+											{code: 'Bra', name: 'Brasil'},
+											{code: 'Col', name: 'Colombia'},
+											{code: 'Chi', name: 'Chile'},
+											{code: 'Ecu', name: 'Ecuador'},
+											{code: 'Par', name: 'Paraguay'},
+											{code: 'Per', name: 'Perú'},
+											{code: 'Uru', name: 'Uruguay'},
+											{code: 'Ven', name: 'Venezuela'},
+										];
+										for (const oneCountry of countries) {
+									%>
+											<option 
+												value="<%= oneCountry.code %>"
+												<%= typeof oldData != 'undefined' && oldData.country == oneCountry.code ? 'selected' : null %>
+											> <%= oneCountry.name %> </option>
+									<% } %>
+								</select>
+								<% if (typeof hasErrorGetMessage != 'undefined') { %>
+									<div class="invalid-feedback">
+										<%= hasErrorGetMessage('country', errors) %>
+									</div>
+								<% } %>
+							
+								<div class="custom-file">
+									<input type="file" name="avatar"
+										class="reg__inpfile
+										<% if (typeof hasErrorGetMessage != 'undefined') { %>
+											<%= hasErrorGetMessage('avatar', errors) ? 'is-invalid' : 'is-valid' %>
+										<% } %>"
+									>
+									<label for="avatar">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" class="reg__loadimg">
+											<path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>
+										</svg>
+										<span>Сhoose profile photo</span><input type="file" name="avatar"
+										class="reg__inpfile
+										<% if (typeof hasErrorGetMessage != 'undefined') { %>
+											<%= hasErrorGetMessage('avatar', errors) ? 'is-invalid' : 'is-valid' %>
+										<% } %>"
+									></label>
+ 
+									<% if (typeof hasErrorGetMessage != 'undefined') { %>
+										<div class="invalid-feedback">
+											<%= hasErrorGetMessage('avatar', errors) %>
+										</div>
+									<% } %>
+								</div>
+							
+						
+						
+						<button type="submit" class="forms__btn">Check in</button>
+						
+				</form>
+				<h3 class="forms__noakk">У вас есть аккаунт <a class="forms__noakk_link" href="/user/login">Login</a></h3>
+
+	</div>
+	
+	
+	<%- include('partials/footer'); %>
+</body>
+</html>

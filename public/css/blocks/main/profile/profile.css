@@ -1,0 +1,9 @@
+@import url("./__button/profile__button.css");
+@import url("./__img/profile__img.css");
+@import url("./__menu/profile__menu.css");
+@import url("./__user/profile__user.css");
+@import url("./__dropdown-toggle/profile__dropdown-toggle.css");
+@import url("./__arrow/profile__arrow.css");
+.profile{
+    margin: 0;
+}

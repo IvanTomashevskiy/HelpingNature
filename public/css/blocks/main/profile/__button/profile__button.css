@@ -1,0 +1,9 @@
+@import url("./_logout/profile__button_logout.css");
+@import url("./_profile/profile__button_profile.css");
+
+.profile__button{
+    padding: 0 21px;
+    color: black;
+    font-size: 15px;
+    
+}
