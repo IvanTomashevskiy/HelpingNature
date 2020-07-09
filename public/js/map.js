@@ -1,5 +1,7 @@
-const mymap = L.map('mapid').setView([0, 0], 3);
+const popup = document.querySelector('#popupEdit');
+const popupCloseBtn = document.querySelector('.popup__close');
 
+const mymap = L.map('mapid').setView([0, 0], 3);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
@@ -13,8 +15,19 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 function onMapmark(e) {
     var marker = L.marker().setLatLng(e.latlng)
     marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup().addTo(mymap);
-
-
 }
+
+function mapPopupOpen(){
+    popup.classList.add('popup_is-opened')
+}
+
+function mapPopupClose(){
+    popup.classList.remove('popup_is-opened')
+}
+
+
+mymap.on('click', mapPopupOpen);
+
+popupCloseBtn.addEventListener('click', mapPopupClose);
 
 mymap.on('click', onMapmark);
