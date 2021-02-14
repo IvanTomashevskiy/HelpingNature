@@ -31,23 +31,29 @@
                     <h2 class="user-info__name"><%= userLogged.full_name %></h2>
                     <h2 class="user-info__mail"><%= userLogged.email %></h2>
                     <p class="user-info__job">Увлечения</p>
+
                 </div>
             </div>
         </div>
-        <div class="mapid" id="mapid"></div>
+        <div class="map__cont">
+            <iframe src="https://gifer.com/embed/4AlR" width=280 height=600 frameBorder="0" allowFullScreen></iframe><p><a href="https://gifer.com"></a></p>
+            <div class="mapid" id="mapid"></div>
+            <iframe src="https://gifer.com/embed/4AlR" width=280 height=600 frameBorder="0" allowFullScreen></iframe><p><a href="https://gifer.com"></a></p>
 
+        </div>
     </div>
 
     <div class="popup" id='popupEdit'>
         <div class="popup__content">
           <img src='../img/close.svg' alt="" class="popup__close">
           <h3 class="popup__title">Сообщить об экологической проблеме</h3>
-          <form class="popup__form" name="edit"  action="https://formspree.io/mbjzzeyz" method="POST">
+          <form class="popup__form" name="edit"  action="https://formspree.io/f/mbjzzeyz" method="POST">
               <input type="text" name="fullname" class="popup__input popup__input_type_name" placeholder="Ф.И.О">
               <!-- <span class='popup__error-message' id='fullname-error'></span> -->
               <textarea type="text" name="problem" class="popup__input popup__input_type_problem" placeholder="О проблеме"></textarea>
               <!-- <span class='popup__error-message' id='bio-error'></span> -->
-              <button type="submit" class="button popup__button popup__button_text popup__button_active">Отправить</button>
+              <input type="text" id="iiii" name="cord" class="popup__input popup__input_type_cord" value=" "></input>
+              <button type="submit"  class="button popup__button popup__button_text popup__button_active">Отправить</button>
           </form>
         </div>
       </div>

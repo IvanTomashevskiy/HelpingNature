@@ -1,5 +1,6 @@
 @import url('./_type_problem/popup__input_type_problem.css');
 @import url('./_type_name/popup__input_type_name.css');
+@import url('./_type_cord/popup__input_type_cord.css');
 .popup__input {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, .2);

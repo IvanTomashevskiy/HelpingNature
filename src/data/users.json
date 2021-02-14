@@ -43,5 +43,50 @@
   "country": "Bol",
   "avatar": "иван-1589458259554.jpg",
   "token": "86U9DBUigS7mJp5DytSjYu"
+ },
+ {
+  "id": 8,
+  "full_name": "qwer",
+  "email": "towwww@mail.ru",
+  "password": "$2b$10$bZMUFrLxb/EJFrLjm9EMvu6Xirb2yPJjT/X7Ta7UkpVqrKWyqwtUe",
+  "country": "Ru",
+  "avatar": "qwer-1599842221013.png",
+  "token": "USxtyYpiWKtiXy1rxZgP9r"
+ },
+ {
+  "id": 9,
+  "full_name": "Иванов Иван",
+  "email": "Ivanov@mail.ru",
+  "password": "$2b$10$R1pFkH0QS5Xb0my5N4jTTOWRs/7IO.CfPRYHSLsyDqg5yDBWXj2ta",
+  "country": "Ru",
+  "avatar": "иванов-иван-1608892838664.jpg",
+  "token": "BgYFry1yJ9gMqWb1knCgWn"
+ },
+ {
+  "id": 10,
+  "full_name": "Ivan",
+  "email": "tomashevskiy_vanya@mail.ru",
+  "password": "$2b$10$AaVsCsFCEe0HCXoxjxoRPe3luuPhfSo10jG5EBiTLvH/6NZaD3.TK",
+  "country": "Ru",
+  "avatar": "ivan-1608892937262.jpg",
+  "token": "EgcNVaGW3YsGWVzD8HWZBn"
+ },
+ {
+  "id": 11,
+  "full_name": "Иванов Иван",
+  "email": "Ivanov@mail.ru",
+  "password": "$2b$10$kSvT/PnG8YtUWX7ZFsTt9uTtibLyirBFUF1Xzn0LEbSlBkaOLHuW.",
+  "country": "Ru",
+  "avatar": "иванов-иван-1608893017006.jpg",
+  "token": "RqjuXBwMHmQ96yfrZj6JQk"
+ },
+ {
+  "id": 12,
+  "full_name": "Соня",
+  "email": "q@mail.ru",
+  "password": "$2b$10$QH4KdejEo6qoRruAR1oX.O4SiSd7zmnhym0LFMQ/mOLyCYhRQ13vK",
+  "country": "Ru",
+  "avatar": "соня-1608895168437.jpg",
+  "token": "NW7LSCHjymqBCRzY5P5sUY"
  }
 ]

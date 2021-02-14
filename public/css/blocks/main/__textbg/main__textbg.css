@@ -1,0 +1,7 @@
+.main__textbg{
+    width: 600px;
+    height: 200px;
+    background-color: white;
+    margin:-400px auto 0 ;
+    border-radius: 30px;
+}

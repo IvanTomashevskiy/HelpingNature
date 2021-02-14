@@ -83,10 +83,10 @@ const controller = {
 				// Redireccionamos al visitante a su perfil
 				return res.redirect('/users/profile');
 			} else {
-				res.send('Credenciales inválidas');
+				res.send('Invalid credentials');
 			}
 		} else {
-			res.send('No hay usuarios registrados con ese email');
+			res.send('There are no registered users with that email');
 		}
 	},
 	profile: (req, res) => {

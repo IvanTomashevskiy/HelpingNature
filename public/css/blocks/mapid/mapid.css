@@ -1,5 +1,8 @@
 .mapid{
     height: 600px;
-    width: 800px;
-    margin: 0 auto;
+    width: 1400px;
+    /* margin: 0 auto; */
+}
+.map__cont{
+    display: flex;
 }
